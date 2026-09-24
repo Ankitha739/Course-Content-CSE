@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://course-content-cse.onrender.com/';
 
 export async function apiRequest(path, method = 'GET', data = null, token = '') {
   const headers = { 'Content-Type': 'application/json' };
