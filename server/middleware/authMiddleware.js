@@ -33,7 +33,7 @@ const protect = async (req, res, next) => {
   
 };
 
-// allowedRoles = []
+// allowedRoles = ["admin", "trainer"]
 const authorize = (...allowedRoles) => {
     return (req, res, next) => {
         if (!req.user || !allowedRoles.includes(req.user.role)) {
